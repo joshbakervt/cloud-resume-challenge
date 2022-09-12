@@ -10,19 +10,63 @@
 
 html, body {
     height: 100%;
-    margin: 0px;
     scroll-behavior: smooth;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+h1 {
+    font-size: 40px;
+}
+
+/*h2 {*/
+/*    font-size: 35px;*/
+/*}*/
+
+/*h3 {*/
+/*    font-size: 30px;*/
+/*}*/
 
 article {
     padding-top: 50px;
     padding-left: 5%;
     padding-right: 5%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 300;
+    color: var(--darker-blue);
+    font-size: 18px;
 }
 
 .navbar {
     position: fixed;
+}
+
+.contactimg {
+    height: 60px;
+    padding-right: 30px;
+}
+
+/*.portraitimg {*/
+/*    height: 30%;*/
+/*    padding: 30px;*/
+/*}*/
+
+.contact {
+    text-align: center;
+}
+
+.p2 {
+    background: var(--darker-blue);
+    color: var(--white-color);
+    padding: 10px;
+}
+#resume {
+    background: var(--darker-blue);
+    color: var(--white-color);
+    /*border-radius: 20px;*/
+}
+
+#resume a:hover {
+    color: var(--bright-orange);
 }
 
 nav li {
