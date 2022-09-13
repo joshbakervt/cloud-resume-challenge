@@ -25,8 +25,28 @@
 
 <body>
 <article>
+    <script>
+        fetch("https://hvkfuvwm9f.execute-api.us-east-1.amazonaws.com/default/addToDynamoDB")
+            .then((response) => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error("NETWORK RESPONSE ERROR");
+                }
+            })
+            .then(data => {
+                console.log(data);
+                displayVisitCount(data)
+            })
+            .catch((error) => console.error("FETCH ERROR:", error));
+
+            function displayVisitCount(data) {
+                const displayData = document.getElementById('visitor-number');
+                displayData.innerHTML = data;
+            }
+    </script>
 <h1 style="text-align: center;">
-    Hi, I'm Josh
+    Hi visitor #<span id="visitor-number"></span>, I'm Josh
 </h1>
 <table>
     <tr>
