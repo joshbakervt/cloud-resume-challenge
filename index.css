@@ -13,6 +13,10 @@ html, body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+.list-group-item {
+    font-size: .8em;
+}
+
 .bg {
     background-color: var(--default-color);
     color: var(--text-color);
@@ -33,4 +37,20 @@ a:active {
 .heading {
     background-color: var(--default-color);
     color: white;
+}
+
+.contactimg {
+    height: 80px;
+    padding-right: 30px;
+}
+
+ul {
+    border-width: 4px;
+    border-color: var(--white-color);
+}
+
+.contact>li {
+    display: inline;
+    list-style-type: none;
+    font-size: 25px;
 }
