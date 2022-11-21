@@ -21,16 +21,31 @@ html, body {
 a {
     color: var(--default-color);
     font-size: 1.8em;
+    text-decoration: none;
 }
-
-a:active {
-    color: var(--default-color);
+a:hover {
+    text-decoration: none;
 }
 
 .centered {
     text-align: center;
 }
-.heading {
-    background-color: var(--default-color);
-    color: white;
+
+.contactimg {
+    height: 10vw;
+    max-height: 90px;
+    padding: 1vw;
+}
+
+.contact {
+    text-align: center;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+}
+
+p {
+    font-size: 1.2em;
 }
